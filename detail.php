@@ -49,11 +49,12 @@
             
             //Item data
             $item1 = new MercadoPago\Item();
+            $item1->id = "1234"; 
             $item1->title = $_POST['title']; 
             $item1->quantity = 1;
             $item1->currency_id = "ARS";
             $item1->description = "Dispositivo móvil de Tienda e-commerce";
-            $item1->picture_url = $_POST['img'];
+            $item1->picture_url = 'https://juakoloyu-mp-commerce-php.herokuapp.com/'.$_POST['img'];
             $item1->unit_price = $_POST['price'];
             
             $preference->items = array($item1);
@@ -67,7 +68,7 @@
                 "pending" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/pending.php',
             );
 
-            $preference->notification_url = "https://juakoloyu-mp-commerce-php.herokuapp.com/notifiations.php?source_news=webhooks";
+            $preference->notification_url = "https://juakoloyu-mp-commerce-php.herokuapp.com/notifications.php?source_news=webhooks";
 
             $preference->external_reference = "juakoloyu@gmail.com";
             
@@ -92,9 +93,9 @@
                     "number" => "22223333",
                 );
             $payer->address = array(
-                    "zip_code" => "false",
-                    "street_name" => "123",
-                    "street_number" => "1111"
+                    "zip_code" => "1111",
+                    "street_name" => "False",
+                    "street_number" => "123"
                 );
 
             $preference->payer = $payer;

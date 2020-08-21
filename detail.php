@@ -64,11 +64,11 @@
             $preference->back_urls = array(
                 "success" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/success.php',
                 "failure" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/failure.php',
-                "pending" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/pending.php',
+                "pending" => 'localhost/mercadopago-fork/pending.php',
             );
 
-            $preference->notification_url = "";
-            
+            $preference->notification_url = "https://juakoloyu-mp-commerce-php.herokuapp.com/notifiations.php?source_news=webhooks";
+
             $preference->external_reference = "juakoloyu@gmail.com";
             
             $preference->payment_methods = array(
@@ -103,7 +103,6 @@
             $preference->save();
 
     ?>
-
 
 <body class="as-theme-light-heroimage">
 
@@ -195,7 +194,7 @@
                                         </h3>
                                     </div>
 
-                                    <input class="mercadopago-button" type="button" onclick="location.href='<?php echo $preference->init_point ?>';" value="Pagar" />
+                                    <input class="mercadopago-button" type="button" onclick="location.href='<?php echo $preference->init_point ?>';" value="Pagar la compra" />
 
                                 </div>
                             </div>

@@ -64,7 +64,7 @@
             $preference->back_urls = array(
                 "success" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/success.php',
                 "failure" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/failure.php',
-                "pending" => 'localhost/mercadopago-fork/pending.php',
+                "pending" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/pending.php',
             );
 
             $preference->notification_url = "https://juakoloyu-mp-commerce-php.herokuapp.com/notifiations.php?source_news=webhooks";

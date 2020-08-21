@@ -201,15 +201,9 @@
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
-<<<<<<< HEAD
+
                                     <input class="mercadopago-button" type="button" onclick="location.href='<?php echo $preference->init_point ?>';" value="Pagar" />
 
-                                    <!--
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
-                                -->
-=======
-                                    <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
->>>>>>> e3aedbfa369010f518359439ddcfb5c7c45a088c
                                 </div>
                             </div>
                         </div>

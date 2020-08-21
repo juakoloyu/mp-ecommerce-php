@@ -1,11 +1,7 @@
 {
     "name": "mp-ecommerce-php",
     "type": "project",
-<<<<<<< HEAD
     "require": {
         "mercadopago/dx-php": "^2.1"
     }
-=======
-    "require": {}
->>>>>>> e3aedbfa369010f518359439ddcfb5c7c45a088c
 }

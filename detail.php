@@ -59,16 +59,16 @@
             $preference->items = array($item1);
 
             
-            //$preference->auto_return = true;
+            $preference->auto_return = "approved";
             
             $preference->back_urls = array(
-                "success" => 'success.php',
-                "failure" => 'failure.php',
-                "pending" => 'pending.php',
+                "success" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/success.php',
+                "failure" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/failure.php',
+                "pending" => 'https://juakoloyu-mp-commerce-php.herokuapp.com/pending.php',
             );
 
-            
             $preference->notification_url = "";
+            
             $preference->external_reference = "juakoloyu@gmail.com";
             
             $preference->payment_methods = array(
